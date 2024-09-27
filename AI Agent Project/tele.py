@@ -4,7 +4,7 @@ import requests
 import json
 import os, asyncio
 
-bot = telebot.TeleBot('7229557238:AAEkaL4pIAIt9WSUAnjX2-23VkMxrmvbW6Q')
+bot = telebot.TeleBot('SECRET API')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
