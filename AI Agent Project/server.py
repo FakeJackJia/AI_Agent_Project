@@ -130,7 +130,7 @@ class MasterAgent:
     async def get_voice(self, text, uid):
         # SSML
         headers = {
-            "Ocp-Apim-Subscription-Key":"b53b22e4609a42f984edaa6f44b5ff24",
+            "Ocp-Apim-Subscription-Key":"SECRET API",
             "Content-Type":"application/ssml+xml",
             "X-Microsoft-OutputFormat":"audio-16khz-32kbitrate-mono-mp3",
             "User-Agent":"jackj-agent"
