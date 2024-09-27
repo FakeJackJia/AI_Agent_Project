@@ -8,5 +8,6 @@ https://github.com/user-attachments/assets/756b8731-183d-4b64-85bb-fcc3646f5a2c
 
 ## Note
 - LLM behind the AI agent is OpenAIChatModel(GPT-3.5)
-- Microsoft Azure is used for AI voice.
+- Microsoft Azure is used for AI voice
 - SerpAPI used for AI Agent to search as a tool
+- It enables you to upload website documents for RAG
