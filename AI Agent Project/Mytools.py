@@ -55,7 +55,7 @@ def birth_fortune(query):
 @tool
 def yaoyigua():
     """只有用户想要占卜抽签的时候才会使用这个工具"""
-    api_key = "SvxFRRIZdhMU7eGX3qGaL2uaR"
+    api_key = "SECRET"
     url = "https://api.yuanfenju.com/index.php/v1/Zhanbu/yaogua"
     result = requests.post(url, data={"api_key":api_key})
     if result.status_code == 200:
@@ -67,7 +67,7 @@ def yaoyigua():
 @tool
 def dream(query):
     """只有用户想要解梦的时候才会使用这个工具，需要输入用户梦境的内容，如果缺少内容则不可用"""
-    api_key = "SvxFRRIZdhMU7eGX3qGaL2uaR"
+    api_key = "SECRET"
     url = "https://api.yuanfenju.com/index.php/v1/Gongju/zhougong"
     
     LLM = OpenAI(temperature=0)
