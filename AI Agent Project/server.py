@@ -13,8 +13,8 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 # environment
 import os, asyncio, uuid
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["SERPAPI_API_KEY"] = "9deab3192e5d6509b40abaab9b2566647574fa746526bf4afef51be6ac06f369"
+os.environ["OPENAI_API_KEY"] = "SECRET API"
+os.environ["SERPAPI_API_KEY"] = "SECRET API"
 # tools
 from Mytools import *
 
