@@ -1,5 +1,5 @@
 # web
-from fastapi import FastAPI, WebSocketDisconnect, WebSocket, BackgroundTasks
+from fastapi import FastAPI, BackgroundTasks
 import uvicorn
 # langchain
 from langchain_openai import ChatOpenAI
@@ -177,17 +177,6 @@ def chat(URL):
     )
     
     return "Doc added"
-
-# @app.websocket("/ws")
-# async def websocket_endpoint(websocket: WebSocket):
-#     await websocket.accept()
-#     try:
-#         while True:
-#             data = await websocket.receive_text()
-#             await websocket.send_text(f"Message text was: {data}")
-#     except WebSocketDisconnect:
-#         print("connection closed")
-#         await websocket.close()
 
 if __name__ == '__main__':
     uvicorn.run(app, host="192.168.1.89", port=8000)
